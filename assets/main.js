@@ -136,7 +136,7 @@ function guessTheNumber() {
     if (+message === secretNumber) {
         console.log(`You win the secret number is ${secretNumber} `);
     } else {
-        return console.log(`You loss the secret number is ${secretNumber} `);
+        return console.log(`You lose the secret number is ${secretNumber} `);
     }
 }
 

@@ -204,6 +204,13 @@ console.log(teurerAls50);
 const table = document.getElementById('table');
 
 const createTable = () => {
+    let tr = '';
+    table.innerHTML = '<tr>';
+    for (key in edelMetallPreise[0]) {
+        tr += `<th>${key}</th>`;
+    }
+    table.innerHTML += `${tr} </tr>`;
+
     for (element of edelMetallPreise) {
         table.innerHTML += `<tr><td>${element.name}</td><td>${element.preiseGramEuro}</td><td>${element.veranderung}</td></tr> `;
     }

@@ -200,3 +200,13 @@ edelMetallPreise.filter((element) => {
 });
 
 console.log(teurerAls50);
+
+const table = document.getElementById('table');
+
+const createTable = () => {
+    for (element of edelMetallPreise) {
+        table.innerHTML += `<tr><td>${element.name}</td><td>${element.preiseGramEuro}</td><td>${element.veranderung}</td></tr> `;
+    }
+};
+
+createTable();
